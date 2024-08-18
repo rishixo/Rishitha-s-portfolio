@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <div id = "top"> 
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="meeting_the_brief.html">Meeting the brief</a>
+      <a href="investigate_and_plan.html">Investigation</a>
+      <a href="design.html">Design</a>
+      <b href="implementation.html">Implementation</b>
+      <a href="testing.html">Testing</a>
+      <a href="evaluation.html">Evaluation</a>
+      <a href="references.html">References</a>
+      <a href="wordcount.html">Word Count</a>
+    </div>
+  </div>
+<script src="script.js"></script>
+  
+  <h1>Implementation</h1>
+   <h3>Iteration Objectives:</h3>
+  <img src="images/iterationobjectives .jpg" width="500" height="200">
+    <h3>Description of how system was implemented:</h3>
+    <br>
+    <img src="images/progress1.png" width="400" height="500">
+    <img src="images/progress2.png" width="400" height="500">
+
+   <h3>Description of each iteration</h3>
+  <p1>Iteration 1</p1>
+  <li>Focused on creating a basic, working version of blackjack, covering singleplayer, multiplayer, and simulation play. Due to some challenges encountered during development, certain aspects of the game were abstracted away for simplicity. For example, the individual suits were not included in order to streamline the mathematical aspects of the game.</li>
+  
+<p1>Iteration 2</p1>
+<li>The focus shifted to analytics. A new option was added to the program, allowing users to view statistical data. To enable this feature, various libraries were imported and three CSV files were created to store game data. The program was designed to add data to these files and retrieve it for analysis.</li>
+  
+<p1>Iteration 3</p1>
+<li>A new game mode was added for hypothesis testing, which allows users to create their own hypotheses and compare them to the results of the regular simulation. Additionally, statistical analysis was completed and graphs were added to provide users with visual representation of the data. Minor improvements were made to the code for better user experience and aesthetics.</li>
+
+    <h3>Essential parts of my project:</h3>
+    <img src="images/essential1.png" width="500" height="500">
+    <img src="images/essential2.png" width="500" height="500">
+    <img src="images/essential3.png" width="500" height="500">
+    <img src="images/essential4.png" width="500" height="500">
+    <img src="images/essentials5.png" width="500" height="500">
+  <p3> HitStand is a crucial function used in various game modes in which the user plays. 
+
+<Li>Its main purpose is to control what action should be taken if the user chooses to hit or stand in the game.</Li> 
+
+<li>It first checks for any aces and prompts the user to choose a value for it, which is validated. </li>
+
+<li>If the user chooses to hit, HitStand function adds a card to the user's hand from a randomly shuffled deck. </li>
+
+<li>The function can be run recursively while the user's hand total is below 21. </li>
+
+<li>If the user chooses to stand, the dealer's turn algorithms run based on the game's rules. </li>
+
+<li>Based on the dealer's hand and the user's hand, the HitStand function returns a Boolean value indicating whether the user won or lost the game. </li></p3>
+
+ <h3>Problems I encountered:</h3>
+  <img src="images/analysis table.png" width="600" height="200">
+  <p1><li>After completing iteration one, I realized that it would be challenging to conduct statistical analysis on the multiplayer mode since the winner is chosen in a different function from the one that controls the gameplay and data collection. As a result, I could only analyze the bank data, which would not provide a comprehensive picture of the game's performance. To make matters worse, creating new functions for graphs and other analytical tools would require significant additional work, and it would be impossible to compare the results with those of the other modes. </li>
+
+<li>However, I found a solution by using global variables, which can be named outside any function and used in all functions. This allowed me to collect and store the same data for the winner in the multiplayer mode as in the other modes. Consequently, I was able to conduct statistical analysis on all modes of the game and generate useful insights that could be compared across all modes. </li>
+    
+  </p1>
+  <a href="design.html" class="changepageleft previous">&laquo; Previous</a>
+    <a href="testing.html" class="changepageright next">Next &raquo;</a>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <div id = "top"> 
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="meeting_the_brief.html">Meeting the brief</a>
+      <a href="investigate_and_plan.html">Investigation</a>
+      <b href="design.html">Design</b>
+      <a href="implementation.html">Implementation</a>
+      <a href="testing.html">Testing</a>
+      <a href="evaluation.html">Evaluation</a>
+      <a href="references.html">References</a>
+      <a href="wordcount.html">Word Count</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+   <h1>Design</h1>
+    <br>
+    <img src="images/flowchart.jpg" width="800" height="800">
+    <br>
+    <h3>Game to Completion</h3>
+    <br>
+    <p1> Upon starting the game, a menu will appear, prompting the user to select one of the six available modes. Only inputs within the range of 1 to 6 will be accepted, and any invalid input will be rejected and prompt the user to try again. 
+    </p1>
+    <br>
+    <h3>Detailed Description of how artefact works and how it will meet my objectives </h3>
+    <br>
+
+     <div class="designtable">
+    <table>
+    <tr>
+        <th>Step</th>
+        <th>Process</th>
+        <th>Step</th>
+        <th>Process</th>
+     </tr>
+    <tr>
+    <td>1</td>
+    <td>Single player Mode: 
+      </li>
+<li>In this mode, the user plays against the dealer (i.e., computer).  
+
+The objective is to get a higher total than the dealer without exceeding 21.  
+
+When selected, the code asks for your bet, from the 1000 in your balance. This allows the user to earn or lose money. </li>
+
+<li>Then the dealer gives the user two cards. 
+
+The user can either hit (ask for another card) or stand (keep the current hand) to try and get closer to 21.  
+
+The dealer will continue to hit until their total is 17 or higher. If the user's total exceeds 21, they lose, and if the dealer's total exceeds 21, the user wins. User will input “h” or “s”. Data is validated </li>
+
+<li>If an Ace is presented, user can choose between the values of 11 or 1, whatever number brings them closer to 21 with their current inventory. Data is stored in csv </li>
+    </td>
+    <td>4</td>
+    <td>Statistical Analysis: 
+<li> The game includes a feature that analyzes the player's performance and provides statistical data. </li>
+
+<li>The data includes the number of games played, win percentage, loss percentage, winning numbers etc. </li>
+<li> The data is stored in a CSV file that can be accessed by the user at any time. </li>
+
+    </td>
+     </td>
+     </tr>
+
+    <tr>
+    <td>2</td>
+    <td>Multiplayer Mode: 
+<li>In this mode, multiple users can play against each other. The game proceeds similarly to the single player mode, but with each player taking turns to play their hand. The player closest to 21 wins. </li>
+
+<li> Bet feature is also included. Data is also stored in a csv file. </li>
+
+
+    </td>
+     
+    <td>5</td>
+    <td> Hypothesis Testing Mode: 
+    <li>Users can test and analyze different hypotheses related to the game's mechanics, such as whether changing 21 affects win rates or if a certain playing strategy is more effective.</li>
+    </td>
+      
+   
+    </tr>
+      
+     <tr>
+    <td>3</td>
+    <td>Lucia’s simulation: 
+    <li>In this mode, the user can watch the game character Lucia and the computer play against each other.</li>
+      <li>The game mechanics are the same as the single player mode, except the user has no control over the gameplay.</li>
+      <li> Bet feature is also included. Data is stored in csv.</li>
+    </td>
+    <td>6</td>
+    <td>Quit program:  
+      <li>Program ends</li>
+
+    </td>
+    </tr>
+    </table>
+    </div>
+    <br>
+    <h3>Modelling</h3>
+    <p1>
+      I implemented game modelling in the Python blackjack game by designing and programming the game interface, creating algorithms for single player, multiplayer, and simulation modes, and incorporating statistical analysis to enhance the user's gaming experience. I also used a progress bar for aesthetics and to give the user some time to process outputs. 
+    </p1>
+    <br>
+    <br>
+    <img src="images/menu.jpg" width="500" height="250">
+    <img src="images/progressbar.jpg" width="500" height="250">
+    <br>
+    <h3>Abstraction</h3>
+    <p1>
+      The single-player mode against the computer and no betting feature provided the foundational structure for the project. This implementation allowed for the game's mechanics to be developed, tested, and refined before adding more advanced features, such as multiplayer or betting. 
+    </p1>
+    <br>
+    <br>
+    <img src="images/abstraction.jpg" width="500" height="200">
+
+    <a href="investigationandplan.html" class="changepageleft previous">&laquo; Previous</a>
+    <a href="implementation.html" class="changepageright next">Next &raquo;</a>
+
+    <script src="script.js"></script>
+  </div>
+  </body>
+</html>

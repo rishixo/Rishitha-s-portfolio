@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <div id = "top"> 
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="meeting_the_brief.html">Meeting the brief</a>
+      <a href="investigate_and_plan.html">Investigation</a>
+      <a href="design.html">Design</a>
+      <a href="implementation.html">Implementation</a>
+      <b href="testing.html">Testing</b>
+      <a href="evaluation.html">Evaluation</a>
+      <a href="references.html">References</a>
+      <a href="wordcount.html">Word Count</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+  <h1>Testing</h1>
+
+    <div class="para">
+      <p1>
+       <h3> Extent of Testing: </h3>
+        <p1> <li>Throughout the development of the software model, white box and unit tests were regularly conducted.</li>
+          <li>After implementing each new function, unit tests were performed using equivalence partitions and, more importantly, boundary values.</li>
+         <li> Given the numerous comparative operators in blackjack, testing was essential to ensure the game operated smoothly, and the correct outputs were displayed and analyzed.</li> </p1>
+        
+        <h4>Problem encountered:</h4>
+      <p1><li>Early in the project, during white box testing, an issue was discovered where players could place a bet of 1001 from a bank of 1000.</li> 
+        <li>This occurred because incorrect inputs were only identified if the input was "greater than" 1001, allowing 1001 to be accepted.</li> 
+        <li>The problem was resolved by using the operator "greater than or equal to."</li> 
+        <li>Due to the numerous comparative operations in blackjack, testing was performed on every function before proceeding to the next one.</li> </p1>
+
+ 
+        
+      
+         
+
+      </p1>
+    </div>
+    <br>
+    <br>
+      <div class="testtable">
+    <table>
+    <tr>
+        <th>Test ID</th>
+        <th>Test Description</th>
+        <th>Test Data</th>
+        <th>Expected Result</th>
+        <th>Actual Result</th>
+        <th>Pass (Y/N)</th>
+     </tr>
+    <tr>
+    <td>1</td>
+    <td>Starting single player from menu</td>
+    <td>User inputs 1</td>
+    <td>Single player bank and bet input shows</td>
+    <td>Single player bank and bet input shows</td>
+    <td>Y</td>
+     </tr>
+  <tr>
+<td>2</td>
+<td>Testing boundary values of bank for bet</td>
+<td>User enters 1001 at beginning of game</td>
+<td>Validation and choice to enter another bet</td>
+<td>Validation and choice to enter another bet</td>
+<td>Y</td>
+ </tr>
+
+
+ <tr>
+<td>3</td>
+<td>Choosing values for ace</td>
+<td>User inputs 12</td>
+<td>Incorrect input text shown and input for new value</td>
+<td>Incorrect input text shown and input for new value</td>
+<td>Y</td>
+ </tr>
+
+ <tr>
+<td>4</td>
+<td>Testing validation of user choices</td>
+<td>User inputs "y" when asked to hit or stand</td>
+<td>Incorrect inputs shown and input for new choice</td>
+<td>Incorrect inputs shown and input for new choice</td>
+<td>Y</td>
+ </tr>
+
+ <tr>
+<td>5</td>
+<td>Lucia's decision to hit or stand at boundary values</td>
+<td>Lucia's hand total is 17</td>
+<td>Dealer's turn begins and his choice is displayed</td>
+<td>Dealer's turn begins and his choice is displayed</td>
+<td>Y</td>
+ </tr>
+
+ <tr>
+<td>6</td>
+<td>Algorithm's choice of the value of an ace</td>
+<td>A hand consisting of ['A', 9, 2]</td>
+<td>Hand becomes [1, 9, 2]</td>
+<td>Hand becomes [1, 9, 2]</td>
+<td>Y</td>
+ </tr>
+
+ <tr>
+<td>7</td>
+<td>The value of the counter 'n' when menu is chosen</td>
+<td>User selects 'n' when asked to play again</td>
+<td>Variable 'n' becomes 0</td>
+<td>Variable 'n' becomes 0</td>
+<td>Y</td>
+ </tr>
+
+ <tr>
+<td>8</td>
+<td>User decides not to change any parameters in hypothesis</td>
+<td>User selects 'n' to choose of changing params</td>
+<td>Simulation begins with normal parameters</td>
+<td>Simulation begins with normal parameters</td>
+<td>Y</td>
+ </tr>
+ </div>
+</table> 
+<a href="implementation.html" class="changepageleft previous">&laquo; Previous</a>
+    <a href="evaluation.html" class="changepageright next">Next &raquo;</a>
+    <script src="script.js"></script>
+  </body>
+</html>
